@@ -7,3 +7,8 @@ desc "install gems"
 task :install do
   sh "bundle install"
 end
+
+desc "Test class Fraccion"
+task :test do
+  sh "ruby -I. tc_racional.rb"
+end
