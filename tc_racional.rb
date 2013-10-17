@@ -15,11 +15,11 @@ class Test_Fraccion < Test::Unit::TestCase
   end
 
   def test_simple
-    assert_equal("3.0 / 8.0", @matrizA.to_s)
-    assert_equal("13.0 / 24.0", (@matrizA.suma(@matrizB)).to_s)
-    assert_equal("5.0 / 24.0", (@matrizA.resta(@matrizB)).to_s)
-    assert_equal("1.0 / 16.0", (@matrizA.producto(@matrizB)).to_s)
-    assert_equal("9.0 / 4.0", (@matrizA.division(@matrizB)).to_s)
+    assert_equal("3.0 / 8.0", (@matrizA).to_s())
+    assert_equal("13.0 / 24.0", (@matrizA.suma(@matrizB)).to_s())
+    assert_equal("5.0 / 24.0", (@matrizA.resta(@matrizB)).to_s())
+    assert_equal("1.0 / 16.0", (@matrizA.producto(@matrizB)).to_s())
+    assert_equal("9.0 / 4.0", (@matrizA.division(@matrizB)).to_s())
   end
 
   def test_type_check
@@ -27,10 +27,10 @@ class Test_Fraccion < Test::Unit::TestCase
   end
 
   def test_failure
-    assert_equal("1.0 / 1.0", (@matrizA.suma(@matrizB)).to_s, "Suma")
-    assert_equal("1.0 / 1.0", (@matrizA.resta(@matrizB)).to_s, "Resta")
-    assert_equal("1.0 / 1.0", (@matrizA.producto(@matrizB)).to_s, "Producto")
-    assert_equal("1.0 / 1.0", (@matrizA.division(@matrizB)).to_s, "División")
+    assert_equal("1.0 / 1.0", (@matrizA.suma(@matrizB)).to_s(), "Suma")
+    assert_equal("1.0 / 1.0", (@matrizA.resta(@matrizB)).to_s(), "Resta")
+    assert_equal("1.0 / 1.0", (@matrizA.producto(@matrizB)).to_s(), "Producto")
+    assert_equal("1.0 / 1.0", (@matrizA.division(@matrizB)).to_s(), "División")
   end
 
 end
