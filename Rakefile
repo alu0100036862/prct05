@@ -1,11 +1,6 @@
-desc "build HTML from README.md"
-task :html do
-  sh "kramdown README.md  > README.html"
-end
-
-desc "install gems"
-task :install do
-  sh "bundle install"
+desc "Práctica"
+task :default do
+  sh "ruby prct05.rb"
 end
 
 desc "Test class Fraccion"
