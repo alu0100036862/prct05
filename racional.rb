@@ -20,7 +20,7 @@ class Fraccion
     
     # Llamamos a la función del máximo común divisor
     mcd = gcd(num,den)
-    "#{num/mcd} / #{den/mcd}"
+    puts "#{num/mcd} / #{den/mcd}"
 
   end
  
